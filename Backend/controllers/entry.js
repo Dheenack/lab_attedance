@@ -52,7 +52,7 @@ if (isNaN(inTime.getTime())) {
     console.log("checkout")
     console.log(`current date:${outTime}, in-time=${inTime},diff=${totalTimeMs}`)
     await db.query(
-      'UPDATE entry SET out_time = ?,total_time=? WHERE reg_no = ?',
+      'UPDATE entry SET out_time = ?,total_time=? where Date_=curdate() and out_time is null and reg_no=?',
       [outTime,totalTime, regNumber]
     );
     return res.json({"name":student[0].student_name,"status":"check-out","regNumber":regNumber,"totaltime":totalTime});
