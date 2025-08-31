@@ -15,6 +15,28 @@
   padding-top: 20px;
 }
 
+.avatar{
+  height: 40vh;
+  width: 40vh;
+  background-color: aliceblue;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 20vh;
+}
+
+.StatusBox{
+  text-align: center;
+}
+.entrytime{
+  color: aqua;
+  font-size: 300;
+}
+.student{
+  color: aquamarine;
+}
+#status{
+  color:greenyellow;
+}
 /*
 .logo {
   height: 6em;
