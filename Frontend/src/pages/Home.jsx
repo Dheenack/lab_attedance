@@ -61,6 +61,13 @@ useEffect(() => {
               minLength={12}
               onChange={(e) => setRegNumber(e.target.value)}
             />
+            {/* <h2>system no:</h2>
+            <input
+              type="text"
+              // value={regNumber}
+              // minLength={12}
+              // onChange={(e) => setRegNumber(e.target.value)}
+            /> */}
             <input type="submit" />
           </form>
         </section>
